@@ -15,11 +15,6 @@ Uma aplicação web completa para gerenciar sua coleção de jogos. Desenvolvida
 - [Estrutura do Projeto](#-estrutura-do-projeto)
 - [Pré-requisitos](#-pré-requisitos)
 - [Instalação e Execução](#-instalação-e-execução)
-- [Endpoints da API](#-endpoints-da-api)
-- [Exemplos de Uso](#-exemplos-de-uso)
-- [Contribuição](#-contribuição)
-- [Licença](#-licença)
-- [Contato](#-contato)
 
 ## 🎯 Sobre o Projeto
 
@@ -67,8 +62,8 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 - [Python 3.8+](https://www.python.org/downloads/)
 - [Git](https://git-scm.com/)
-- Um navegador web (Chrome, Firefox, Edge, etc.)
-- [VS Code](https://code.visualstudio.com/) (opcional, mas recomendado)
+- Um navegador web (Chrome, Edge)
+- [VS Code](https://code.visualstudio.com/) (opcional)
 
 ## 🚀 Instalação e Execução
 
@@ -76,7 +71,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 ```bash
 git clone https://github.com/BDlucca/Full_Stack_Games.git
-cd Full_Stack_Games
 ```
 ### No backend instale as dependencias e rode o projeto
 ```bash
