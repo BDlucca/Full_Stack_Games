@@ -3,7 +3,6 @@
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![Flask](https://img.shields.io/badge/Flask-2.0+-green.svg)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-3.0+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 Uma aplicação web completa para gerenciar sua coleção de jogos. Desenvolvida com Flask no backend, HTML/CSS/JS no frontend e documentação automática com Swagger.
 
