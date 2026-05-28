@@ -67,7 +67,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 ## 🚀 Instalação e Execução
 
-### Clone o repositório e faça a instalaçao das dependencias do backend
+### Clone o repositório
 
 ```bash
 git clone https://github.com/BDlucca/Full_Stack_Games.git
