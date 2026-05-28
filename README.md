@@ -60,4 +60,27 @@ Como um gamer apaixonado, sempre quis ter um lugar para registrar os jogos que j
 - **GitHub** - Hospedagem do código
 - **VS Code** - Ambiente de desenvolvimento
 
-## 📁 Estrutura do Projeto
+
+## 📦 Pré-requisitos
+
+Antes de começar, você vai precisar ter instalado em sua máquina:
+
+- [Python 3.8+](https://www.python.org/downloads/)
+- [Git](https://git-scm.com/)
+- Um navegador web (Chrome, Firefox, Edge, etc.)
+- [VS Code](https://code.visualstudio.com/) (opcional, mas recomendado)
+
+## 🚀 Instalação e Execução
+
+### Clone o repositório
+
+```bash
+git clone https://github.com/BDlucca/Full_Stack_Games.git
+cd Full_Stack_Games
+
+cd backend
+
+pip install -r requirements.txt
+
+python app.py
+´´´
