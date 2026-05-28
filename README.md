@@ -72,15 +72,29 @@ Antes de começar, você vai precisar ter instalado em sua máquina:
 
 ## 🚀 Instalação e Execução
 
-### Clone o repositório
+### Clone o repositório e faça a instalaçao das dependencias do backend
 
 ```bash
 git clone https://github.com/BDlucca/Full_Stack_Games.git
 cd Full_Stack_Games
-
+```
+### No backend instale as dependencias e rode o projeto
+```bash
 cd backend
 
 pip install -r requirements.txt
 
 python app.py
-´´´
+```
+
+### No frontend execute projeto 
+```bash
+cd frontend
+python -m http.server 5500
+```
+
+### Landing
+```bash
+cd landing
+python -m http.server 5501
+```
