@@ -1,0 +1,42 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "Games API",
+    "description": "API pra gerenciar sua coleção de jogos",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/api/games/": {
+      "get": {
+        "summary": "Lista todos os jogos",
+        "responses": {
+          "200": { "description": "Lista retornada" }
+        }
+      },
+      "post": {
+        "summary": "Adiciona novo jogo",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "nome": { "type": "string" },
+                  "genero": { "type": "string" },
+                  "plataforma": { "type": "string" },
+                  "ano_lancamento": { "type": "integer" },
+                  "nota_pessoal": { "type": "number" }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": { "description": "Jogo criado" },
+          "400": { "description": "Erro de validação" }
+        }
+      }
+    }
+  }
+}

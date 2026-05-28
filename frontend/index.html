@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎮 Games - Minha coleção</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        * { font-family: 'Inter', sans-serif; }
+        .game-card {
+            transition: all 0.2s ease;
+        }
+        .game-card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen">
+    <div class="container mx-auto px-4 py-8 max-w-6xl">
+        <!-- Header -->
+        <div class="text-center mb-10">
+            <h1 class="text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
+                🎮 Games
+            </h1>
+            <p class="text-gray-400 mt-2">Sua coleção de jogos</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 gap-8">
+            <!-- Formulário -->
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-xl border border-gray-700">
+                <h2 class="text-xl font-bold text-white mb-4">➕ Adicionar jogo</h2>
+                
+                <form id="gameForm" class="space-y-4">
+                    <div>
+                        <label class="block text-gray-300 text-sm mb-1">Nome *</label>
+                        <input type="text" id="nome" required 
+                               class="w-full px-3 py-2 bg-gray-900 border border-gray-600 rounded-lg focus:outline-none focus:border-purple-500 text-white">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-300 text-sm mb-1">Gênero *</label>
+                        <input type="text" id="genero" required
+                               class="w-full px-3 py-2 bg-gray-900 border border-gray-600 rounded-lg focus:outline-none focus:border-purple-500 text-white">
+                    </div>
+                    
+                    <div class="grid grid-cols-2 gap-4">
+                        <div>
+                            <label class="block text-gray-300 text-sm mb-1">Plataforma</label>
+                            <select id="plataforma" class="w-full px-3 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white">
+                                <option value="PC">💻 PC</option>
+                                <option value="PlayStation">🎮 PlayStation</option>
+                                <option value="Xbox">🎮 Xbox</option>
+                                <option value="Nintendo">🍄 Nintendo</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-gray-300 text-sm mb-1">Ano</label>
+                            <input type="number" id="ano_lancamento" required
+                                   class="w-full px-3 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-300 text-sm mb-1">Nota (0-10)</label>
+                        <input type="number" id="nota_pessoal" step="0.1" required
+                               class="w-full px-3 py-2 bg-gray-900 border border-gray-600 rounded-lg text-white">
+                    </div>
+                    
+                    <button type="submit" 
+                            class="w-full bg-purple-600 hover:bg-purple-700 text-white font-bold py-2 rounded-lg transition">
+                        🚀 Adicionar
+                    </button>
+                </form>
+                
+                <div id="feedback" class="mt-4 hidden text-sm"></div>
+            </div>
+
+            <!-- Lista -->
+            <div class="bg-gray-800 rounded-2xl p-6 shadow-xl border border-gray-700">
+                <div class="flex justify-between items-center mb-4">
+                    <h2 class="text-xl font-bold text-white">📚 Minha coleção</h2>
+                    <button id="refreshBtn" class="bg-gray-700 hover:bg-gray-600 text-white px-3 py-1 rounded-lg text-sm">
+                        🔄 Atualizar
+                    </button>
+                </div>
+                
+                <div id="gamesList" class="space-y-3 max-h-[500px] overflow-y-auto">
+                    <div class="text-center text-gray-500 py-8">Carregando...</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

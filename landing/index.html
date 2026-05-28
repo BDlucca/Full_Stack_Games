@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games App - Gerencie sua coleção</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Hero -->
+    <section class="bg-gradient-to-r from-purple-700 to-pink-700 text-white py-20">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-5xl font-bold mb-4">🎮 Games App</h1>
+            <p class="text-xl mb-8">Organize sua coleção de jogos de forma simples</p>
+            <div class="flex gap-4 justify-center">
+                <a href="#como-executar" class="bg-white text-purple-700 px-6 py-2 rounded-lg font-semibold hover:shadow-lg transition">
+                    Como usar
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section class="py-16 container mx-auto px-4">
+        <div class="text-center mb-10">
+            <h2 class="text-3xl font-bold text-gray-800">Sobre o projeto</h2>
+            <div class="w-20 h-1 bg-purple-600 mx-auto mt-2"></div>
+        </div>
+        <div class="max-w-3xl mx-auto text-gray-600 text-center">
+            <p class="text-lg">
+                Games App é uma aplicação completa para você gerenciar sua biblioteca de jogos.
+                Com ela você pode adicionar, listar e remover jogos da sua coleção.
+            </p>
+        </div>
+    </section>
+
+    <!-- Como executar -->
+    <section id="como-executar" class="py-16 bg-gray-100">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-10">
+                <h2 class="text-3xl font-bold text-gray-800">Como executar</h2>
+                <div class="w-20 h-1 bg-purple-600 mx-auto mt-2"></div>
+            </div>
+            
+            <div class="max-w-2xl mx-auto space-y-6">
+                <div class="bg-white rounded-lg p-6 shadow">
+                    <h3 class="font-bold text-lg mb-2">1. Backend</h3>
+                    <pre class="bg-gray-900 text-green-400 p-3 rounded text-sm overflow-x-auto"><code>cd backend
+pip install -r requirements.txt
+python app.py</code></pre>
+                    <p class="text-sm text-gray-500 mt-2">🔗 API: http://localhost:5000</p>
+                    <p class="text-sm text-gray-500">📖 Swagger: http://localhost:5000/api/docs</p>
+                </div>
+                
+                <div class="bg-white rounded-lg p-6 shadow">
+                    <h3 class="font-bold text-lg mb-2">2. Frontend</h3>
+                    <pre class="bg-gray-900 text-green-400 p-3 rounded text-sm overflow-x-auto"><code>cd frontend
+# Use um servidor HTTP
+python -m http.server 5500</code></pre>
+                    <p class="text-sm text-gray-500 mt-2">🌐 Frontend: http://localhost:5500</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-6 text-center">
+        <p>🎮 Games App - Sua coleção organizada</p>
+    </footer>
+</body>
+</html>
